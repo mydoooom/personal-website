@@ -1,0 +1,10 @@
+{
+  "Index": {
+    "hello": "Hello! My name is",
+    "web-developer": "Web Developer"
+  },
+  "LocaleSwitcher": {
+    "label": "Switch language",
+    "locale": "{locale, select, en {🇬🇧 English} cs {🇨🇿 Čeština} other {Unknown}}"
+  }
+}

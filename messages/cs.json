@@ -1,0 +1,10 @@
+{
+  "Index": {
+    "hello": "Ahoj! Jmenuji se",
+    "web-developer": "Webový vývojář"
+  },
+  "LocaleSwitcher": {
+    "label": "Změnit jazyk",
+    "locale": "{locale, select, en {🇬🇧 English} cs {🇨🇿 Čeština} other {Neznámý}}"
+  }
+}
