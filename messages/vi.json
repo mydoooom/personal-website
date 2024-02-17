@@ -1,0 +1,11 @@
+{
+  "Index": {
+    "hello": "Xin chào! Tôi tên là",
+    "name": "Trần Việt Anh",
+    "web-developer": "Nhà phát triển web"
+  },
+  "LocaleSwitcher": {
+    "label": "Thay đổi ngôn ngữ",
+    "locale": "{locale, select, en {🇬🇧 English} cs {🇨🇿 Čeština} vi {🇻🇳 Tiếng Việt} zh {🇹🇼 中文} other {Unknown}}"
+  }
+}

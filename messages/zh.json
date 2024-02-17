@@ -1,11 +1,11 @@
 {
   "Index": {
-    "hello": "Hello! My name is",
-    "name": "Tran Viet Anh",
-    "web-developer": "Web Developer"
+    "hello": "哈嘍！我叫",
+    "name": "陳越英",
+    "web-developer": "網絡程式設計師"
   },
   "LocaleSwitcher": {
-    "label": "Switch language",
+    "label": "改變語言",
     "locale": "{locale, select, en {🇬🇧 English} cs {🇨🇿 Čeština}  vi {🇻🇳 Tiếng Việt} zh {🇹🇼 中文} other {Unknown}}"
   }
 }

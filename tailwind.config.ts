@@ -5,7 +5,7 @@ const config: Config = {
     theme: {
         container: {
             center: true,
-            padding: '.5rem',
+            padding: '1rem',
         },
         extend: {
             keyframes: {
@@ -19,6 +19,7 @@ const config: Config = {
                 },
             },
             animation: {
+                'slide-in-left': 'slideInFromLeft 1s cubic-bezier(0,1,.27,1)',
                 'accordion-down': 'accordion-down 0.2s ease-out',
                 'accordion-up': 'accordion-up 0.2s ease-out',
             },

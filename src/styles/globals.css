@@ -5,3 +5,14 @@
 body {
     @apply text-slate-950 dark:text-slate-200 dark:bg-slate-900;
 }
+
+@keyframes slideInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-17%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
