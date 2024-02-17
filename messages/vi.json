@@ -1,7 +1,8 @@
 {
   "Index": {
     "hello": "Xin chào! Tôi tên là",
-    "name": "Trần Việt Anh",
+    "name": "Việt Anh",
+    "surname": "Trần",
     "web-developer": "Nhà phát triển web"
   },
   "LocaleSwitcher": {

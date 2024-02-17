@@ -1,7 +1,8 @@
 {
   "Index": {
     "hello": "哈嘍！我叫",
-    "name": "陳越英",
+    "name": "越英",
+    "surname": "陳",
     "web-developer": "網絡程式設計師"
   },
   "LocaleSwitcher": {
