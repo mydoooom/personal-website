@@ -2,7 +2,7 @@ import LocaleSwitcher from '@/components/LocaleSwitcher';
 
 export default function Navigation() {
     return (
-        <nav className="flex justify-end pt-10 pr-5 sticky">
+        <nav className="container flex justify-end pt-7">
             <LocaleSwitcher />
         </nav>
     );
