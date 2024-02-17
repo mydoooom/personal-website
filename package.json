@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@vercel/edge-config": "^0.4.1",
     "next": "13.5.4",
     "prettier": "^3.0.3",
     "react": "^18",
