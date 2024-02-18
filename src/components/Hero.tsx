@@ -27,7 +27,7 @@ export const Hero = () => {
                                         height={200}
                                     />
                                 </DialogTrigger>
-                                <DialogContent className="!rounded-full w-auto h-auto w-[90%] max-w-max">
+                                <DialogContent className="!rounded-full h-auto w-[90%] max-w-max">
                                     <Image
                                         src="https://fqbfpjkbbnujuxty.public.blob.vercel-storage.com/portrait-kSYDBT6p1WNHR8sQib0S5ODiZ20fTl"
                                         alt="portrait"
