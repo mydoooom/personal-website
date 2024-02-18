@@ -1,5 +1,6 @@
-// import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
+import Link from 'next/link';
 import { useLocale, useTranslations } from 'next-intl';
+import { EnvelopeClosedIcon, GitHubLogoIcon, InstagramLogoIcon, LinkedInLogoIcon } from '@radix-ui/react-icons';
 // import Image from 'next/image';
 
 export const Hero = () => {
@@ -38,9 +39,24 @@ export const Hero = () => {
                             {/*    </DialogContent>*/}
                             {/*</Dialog>*/}
                         </div>
-                        <p className="my-0 md:pl-4">
+                        <p className="my-0">
                             👨🏻‍💻 <em>{t('web-developer')}</em>
                         </p>
+                        <div className="flex gap-3 pt-10">
+                            <Link href={'https://www.linkedin.com/in/sebast1antran/'} target={'_blank'}>
+                                <LinkedInLogoIcon className="size-9" />
+                            </Link>
+                            <Link href={'https://github.com/mydoooom'} target={'_blank'}>
+                                <GitHubLogoIcon className="size-9" />
+                            </Link>
+                            <Link href={'https://www.instagram.com/mydoooom/'} target={'_blank'}>
+                                <InstagramLogoIcon className="size-9" />
+                            </Link>
+                        </div>
+                        <Link className="pt-4" href={'mailto:tran@vietanh.cz'}>
+                            <EnvelopeClosedIcon className="inline mr-1" />
+                            tran@vietanh.cz
+                        </Link>
                     </div>
                 </div>
             </div>
