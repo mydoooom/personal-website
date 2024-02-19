@@ -7,6 +7,6 @@
   },
   "LocaleSwitcher": {
     "label": "Změnit jazyk",
-    "locale": "{locale, select, en {🇬🇧 English} cs {🇨🇿 Čeština}  vi {🇻🇳 Tiếng Việt} zh {🇹🇼 中文} other {Unknown}}"
+    "locale": "{locale, select, en {🇬🇧 English} cs {🇨🇿 Čeština}  vi {🇻🇳 Tiếng Việt} zh {🇹🇼 華語} other {Unknown}}"
   }
 }
