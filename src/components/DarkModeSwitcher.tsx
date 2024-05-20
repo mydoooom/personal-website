@@ -1,16 +1,17 @@
 'use client';
 import { Button } from '@/components/ui/button';
-import { SunIcon } from '@radix-ui/react-icons';
-import { useEffect } from 'react';
+import { MoonIcon, SunIcon } from '@radix-ui/react-icons';
+import { useEffect, useState } from 'react';
 
 export default function DarkModeSwitcher() {
-    useEffect(() => {
-        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            document.body.classList.add('dark');
-        }
-    }, []);
+    const [isDarkMode, setIsDarkMode] = useState(false);
 
     useEffect(() => {
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            setIsDarkMode(true);
+            document.body.classList.add('dark');
+        }
+
         window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', handleSwitchDarkMode);
 
         return () => {
@@ -19,13 +20,13 @@ export default function DarkModeSwitcher() {
     }, []);
 
     const handleSwitchDarkMode = () => {
-        console.log(document.body.classList);
+        setIsDarkMode(!isDarkMode);
         document.body.classList.toggle('dark');
     };
 
     return (
         <Button className="rounded-full" size="icon" variant="outline" onClick={handleSwitchDarkMode}>
-            <SunIcon />
+            {isDarkMode ? <MoonIcon /> : <SunIcon />}
         </Button>
     );
 }
