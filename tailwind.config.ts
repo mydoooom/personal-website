@@ -26,5 +26,6 @@ const config: Config = {
         },
     },
     plugins: [require('@tailwindcss/typography'), require('tailwindcss-animate')],
+    darkMode: 'selector',
 };
 export default config;
