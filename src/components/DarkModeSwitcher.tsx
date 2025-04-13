@@ -10,15 +10,27 @@ import { useTheme } from 'next-themes'
 
 export default function DarkModeSwitcher () {
   const [isMounted, setIsMounted] = useState(false)
-  const { setTheme, resolvedTheme } = useTheme()
+  const { theme, setTheme, resolvedTheme } = useTheme()
   const t = useTranslations('ThemeSwitcher');
 
   useEffect(() => {
     setIsMounted(true)
   }, []);
 
+  if (!isMounted) {
+    return (
+      <div className='flex items-center justify-between gap-1 cursor-pointer'>
+        <Button className="rounded-full" size="icon" variant="outline">
+        </Button>
+        <Icon asChild>
+          <CaretDownIcon className="h-4 w-4 opacity-50"/>
+        </Icon>
+      </div>
+    )
+  }
+
   return (
-    <Select onValueChange={(value) => setTheme(value)}>
+    <Select value={theme} onValueChange={(value) => setTheme(value)}>
       <SelectTrigger asChild>
         <div className='flex items-center justify-between gap-1 cursor-pointer' title={t('change-theme')}>
           <Button className="rounded-full" size="icon" variant="outline">
