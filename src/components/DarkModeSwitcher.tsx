@@ -20,7 +20,7 @@ export default function DarkModeSwitcher () {
   return (
     <Select onValueChange={(value) => setTheme(value)}>
       <SelectTrigger asChild>
-        <div className='flex items-center justify-between gap-1 cursor-pointer'>
+        <div className='flex items-center justify-between gap-1 cursor-pointer' title={t('change-theme')}>
           <Button className="rounded-full" size="icon" variant="outline">
             {isMounted && (resolvedTheme === 'dark' ? <MoonIcon/> : <SunIcon/>)}
           </Button>
