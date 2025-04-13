@@ -8,5 +8,11 @@
   "LocaleSwitcher": {
     "label": "改變語言",
     "locale": "{locale, select, en {🇬🇧 English} cs {🇨🇿 Čeština}  vi {🇻🇳 Tiếng Việt} zh {🇹🇼 華語} other {Unknown}}"
+  },
+  "ThemeSwitcher": {
+    "change-theme": "切換主題",
+    "system": "系統預設",
+    "light": "淺色",
+    "dark": "深色"
   }
 }

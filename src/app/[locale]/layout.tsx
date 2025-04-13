@@ -1,4 +1,5 @@
 import Navigation from '@/components/Navigation';
+import { Providers } from '@/components/Providers'
 import { ReactNode } from 'react';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
     description: 'A personal website of Tran Viet Anh',
 };
 
-export default function RootLayout({
+export default async function RootLayout({
     children,
     params: { locale },
 }: {
@@ -21,11 +22,13 @@ export default function RootLayout({
     };
 }) {
     return (
-        <html lang={locale}>
-            <body className={inter.className}>
-                <Navigation />
-                {children}
-            </body>
-        </html>
+      <html lang={locale} suppressHydrationWarning>
+        <body className={inter.className}>
+          <Providers>
+            <Navigation />
+            {children}
+          </Providers>
+        </body>
+      </html>
     );
 }
