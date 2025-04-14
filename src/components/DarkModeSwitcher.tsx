@@ -30,11 +30,11 @@ export default function DarkModeSwitcher() {
                 </Button>
                 <Select value={isMounted ? theme : undefined} onValueChange={value => setTheme(value)}>
                     <SelectTrigger asChild>
-                        <div className="h-[100%] flex items-center cursor-pointer">
+                        <button type='button' className="h-[100%] flex items-center cursor-pointer">
                             <Icon asChild>
                                 <CaretDownIcon className="h-4 w-4 opacity-50" />
                             </Icon>
-                        </div>
+                        </button>
                     </SelectTrigger>
                     <SelectContent>
                         <SelectItem value="system">
