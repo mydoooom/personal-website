@@ -7,6 +7,7 @@ import { Select, SelectContent, SelectItem } from '@/components/ui/select';
 import { CaretDownIcon, DesktopIcon, MoonIcon, SunIcon } from '@radix-ui/react-icons';
 import { SelectTrigger, Icon } from '@radix-ui/react-select';
 import { useTheme } from 'next-themes';
+import { motion } from 'framer-motion';
 
 export default function DarkModeSwitcher() {
     const [isMounted, setIsMounted] = useState(false);
@@ -25,8 +26,11 @@ export default function DarkModeSwitcher() {
                     className="rounded-full"
                     size="icon"
                     variant="outline"
+                    asChild
                 >
-                    {isMounted && (resolvedTheme === 'dark' ? <MoonIcon /> : <SunIcon />)}
+                    <motion.div animate={{ rotate: 360 }}>
+                        {isMounted && (resolvedTheme === 'dark' ? <MoonIcon /> : <SunIcon />)}
+                    </motion.div>
                 </Button>
                 <Select value={isMounted ? theme : undefined} onValueChange={value => setTheme(value)}>
                     <SelectTrigger asChild>

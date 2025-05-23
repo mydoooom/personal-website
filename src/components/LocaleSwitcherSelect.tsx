@@ -1,32 +1,36 @@
-'use client';
+"use client"
 
-import { ReactNode, useTransition } from 'react';
-import { Select, SelectContent, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { usePathname, useRouter } from '../navigation';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { useRouter } from '@/i18n/navigation'
 
 interface LocaleSwitcherSelectProps {
-    children: ReactNode;
-    defaultValue: string;
+  options: Array<{
+    value: string;
     label: string;
+  }>
+  defaultValue: string;
+  label: string;
 }
 
-export default function LocaleSwitcherSelect({ children, defaultValue, label }: LocaleSwitcherSelectProps) {
-    const router = useRouter();
-    const [isPending, startTransition] = useTransition();
-    const pathname = usePathname();
+export default function LocaleSwitcherSelect ({ options, defaultValue, label }: LocaleSwitcherSelectProps) {
+  const { push } = useRouter();
 
-    function onSelectChange(value: string) {
-        startTransition(() => {
-            router.replace(pathname, { locale: value });
-        });
-    }
+  function onSelectChange (value: string) {
+      push('/', { locale: value });
+  }
 
-    return (
-        <Select defaultValue={defaultValue} disabled={isPending} onValueChange={onSelectChange}>
-            <SelectTrigger className="w-[8rem]">
-                <SelectValue placeholder={label} />
-            </SelectTrigger>
-            <SelectContent>{children}</SelectContent>
-        </Select>
-    );
+  return (
+    <Select defaultValue={defaultValue} onValueChange={onSelectChange}>
+      <SelectTrigger className="w-[8rem]">
+        <SelectValue placeholder={label}/>
+      </SelectTrigger>
+      <SelectContent>
+        {options.map(({ value, label }) => (
+          <SelectItem key={value} value={value}>
+            {label}
+          </SelectItem>
+        ))}
+      </SelectContent>
+    </Select>
+  );
 }
