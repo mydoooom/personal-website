@@ -1,5 +1,5 @@
-import Navigation from '@/components/Navigation';
-import { Providers } from '@/components/Providers';
+import Navigation from './_components/Navigation';
+import { Providers } from '../_components/Providers';
 import { hasLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { ReactNode } from 'react';

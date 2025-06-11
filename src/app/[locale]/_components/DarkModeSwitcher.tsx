@@ -2,8 +2,8 @@
 
 import {useTranslations} from 'next-intl';
 import {useEffect, useState} from 'react';
-import {Button} from '@/components/ui/button';
-import {Select, SelectContent, SelectItem} from '@/components/ui/select';
+import {Button} from '@/ui/button';
+import {Select, SelectContent, SelectItem} from '@/ui/select';
 import {CaretDownIcon, DesktopIcon, MoonIcon, SunIcon} from '@radix-ui/react-icons';
 import {SelectTrigger, Icon} from '@radix-ui/react-select';
 import {useTheme} from 'next-themes';

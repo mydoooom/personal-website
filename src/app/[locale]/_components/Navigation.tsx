@@ -1,5 +1,5 @@
-import DarkModeSwitcher from '@/components/DarkModeSwitcher';
-import LocaleSwitcher from '@/components/LocaleSwitcher';
+import DarkModeSwitcher from './DarkModeSwitcher';
+import LocaleSwitcher from './LocaleSwitcher';
 
 export default function Navigation() {
     return (

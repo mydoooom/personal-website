@@ -24,8 +24,9 @@
     ],
     "baseUrl": "src",
     "paths": {
-      "@/components/*": [
-        "components/*"
+      "@/*": ["*"],
+      "@/ui/*": [
+        "app/_components/ui/*"
       ],
       "@/styles/*": [
         "styles/*"
