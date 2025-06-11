@@ -36,7 +36,6 @@
     "@types/react": "^19.1.1",
     "@types/react-dom": "^19.1.2",
     "postcss": "^8",
-    "prettier-config-ackee": "^0.0.16",
     "tailwindcss": "^4.1.8",
     "tw-animate-css": "^1.3.4",
     "typescript": "^5"
