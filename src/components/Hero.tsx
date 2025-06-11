@@ -14,7 +14,7 @@ export const Hero = () => {
                     <strong className="md:text-right">{t('hello')}</strong>
                     <div className="flex flex-col">
                         <div className="flex mb-3 gap-3 flex-col-reverse md:flex-row md: md:gap-8 justify-normal md:items-center">
-                            <h1 className="m-0 text-5xl md:text-7xl animate-slide-in-left">
+                            <h1 className="m-0 text-5xl font-bold md:text-7xl animate-slide-in-left">
                                 <span className="text-teal-600 dark:text-teal-500">{t('surname')}</span>
                                 {`${locale !== 'zh' ? ' ' : ''}${t('name')}`}
                             </h1>
@@ -28,7 +28,7 @@ export const Hero = () => {
                             {/*            height={200}*/}
                             {/*        />*/}
                             {/*    </DialogTrigger>*/}
-                            {/*    <DialogContent className="!rounded-full h-auto w-[90%] max-w-max">*/}
+                            {/*    <DialogContent className="rounded-full! h-auto w-[90%] max-w-max">*/}
                             {/*        <Image*/}
                             {/*            src="/public/vercel.svg"*/}
                             {/*            alt="portrait"*/}

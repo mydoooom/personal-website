@@ -21,7 +21,7 @@ export default function LocaleSwitcherSelect({ options, defaultValue, label }: L
 
     return (
         <Select defaultValue={defaultValue} onValueChange={onSelectChange}>
-            <SelectTrigger className="w-[8rem]">
+            <SelectTrigger className="w-32 cursor-pointer">
                 <SelectValue placeholder={label} />
             </SelectTrigger>
             <SelectContent>
