@@ -1,40 +1,40 @@
-import { Navigation } from './_components/navigation';
-import { Providers } from '../_components/providers';
-import { hasLocale } from 'next-intl';
-import { notFound } from 'next/navigation';
-import { ReactNode } from 'react';
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import '@/styles/globals.css';
-import { routing } from '@/i18n/routing';
+import { Navigation } from "./_components/navigation";
+import { Providers } from "../_components/providers";
+import { hasLocale } from "next-intl";
+import { notFound } from "next/navigation";
+import { ReactNode } from "react";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "@/styles/globals.css";
+import { routing } from "@/i18n/routing";
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    title: 'Tran Viet Anh',
-    description: 'A personal website of Tran Viet Anh',
+  title: "Tran Viet Anh",
+  description: "A personal website of Tran Viet Anh",
 };
 
 export default async function RootLayout({
-    children,
-    params,
+  children,
+  params,
 }: {
-    children: ReactNode;
-    params: Promise<{ locale: string }>;
+  children: ReactNode;
+  params: Promise<{ locale: string }>;
 }) {
-    const { locale } = await params;
+  const { locale } = await params;
 
-    if (!hasLocale(routing.locales, locale)) {
-        notFound();
-    }
-    return (
-        <html lang={locale} suppressHydrationWarning>
-            <body className={inter.className}>
-                <Providers>
-                    <Navigation />
-                    {children}
-                </Providers>
-            </body>
-        </html>
-    );
+  if (!hasLocale(routing.locales, locale)) {
+    notFound();
+  }
+  return (
+    <html lang={locale} suppressHydrationWarning>
+      <body className={inter.className}>
+        <Providers>
+          <Navigation />
+          {children}
+        </Providers>
+      </body>
+    </html>
+  );
 }
