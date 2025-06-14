@@ -30,7 +30,7 @@ export const Hero = () => {
     },
     move: {
       rotate: [0, 14, -8, 14, -4, 10, 0, 0],
-      translateX: [0, 30, 30, 30, 30, 30, 30, 30],
+      translateX: [0, -20, -20, -20, -20, -20, -20, -20],
       transition: {
         duration: 2.5,
         repeat: 2,
@@ -63,7 +63,7 @@ export const Hero = () => {
             </motion.div>
             <motion.div
               variants={waveVariants}
-              className="absolute md:-right-20 -right-12 w-fit select-none text-5xl md:text-7xl pb-5 pr-5 md:pb-10 md:pr-10 justify-self-center md:justify-self-end self-center"
+              className="absolute md:-right-12 -right-8 w-fit select-none text-5xl md:text-7xl pb-5 pr-5 md:pb-10 md:pr-10 justify-self-center md:justify-self-end self-center -scale-x-100"
             >
               👋
             </motion.div>
