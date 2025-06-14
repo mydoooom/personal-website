@@ -16,18 +16,14 @@ export function useBreakpoint(breakpoint: Breakpoint) {
   );
 
   useEffect(() => {
-    // Function to check and update the breakpoint
     const checkBreakpoint = () => {
       setIsLarger(window.innerWidth >= convertedBreakpoints[breakpoint]);
     };
 
-    // Set initial value
     checkBreakpoint();
 
-    // Add event listener for window resize
     window.addEventListener("resize", checkBreakpoint);
 
-    // Cleanup event listener on unmount
     return () => {
       window.removeEventListener("resize", checkBreakpoint);
     };
