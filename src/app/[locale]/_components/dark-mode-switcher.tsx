@@ -29,7 +29,7 @@ export default function DarkModeSwitcher() {
           onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
           className="rounded-full"
           size="icon"
-          variant="outline"
+          // variant="outline"
           asChild
         >
           <button>

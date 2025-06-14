@@ -24,7 +24,7 @@ export const Hero = () => {
           <div className="flex flex-col">
             <div className="relative flex mb-3 gap-3 flex-col-reverse md:flex-row md: md:gap-8 justify-normal md:items-center">
               <h1 className="m-0 text-5xl font-bold md:text-7xl animate-slide-in-left">
-                <span className="text-teal-600 dark:text-teal-500">
+                <span className="text-amber-500 dark:text-amber-400">
                   {t("surname")}
                 </span>
                 {`${locale !== "zh" ? " " : ""}${t("name")}`}
