@@ -11,7 +11,7 @@ export const Hero = () => {
 
   return (
     <>
-      <div className="min-h-screen pt-24 flex justify-center sm:justify-normal items-center ">
+      <div className="min-h-screen pt-24 md:pt-18 flex justify-center sm:justify-normal items-center ">
         <div className="grid grid-cols-1 md:grid-cols-[1fr_3fr] items-start gap-5 prose prose-slate dark:prose-invert max-w-none">
           <div className="hidden md:block"></div>
           <PortraitAndWavingHand />
@@ -36,13 +36,12 @@ export const Hero = () => {
                 ease: [0, 0.71, 0.2, 1.01],
               }}
             >
-              <Card className="mt-4 bg-secondary max-w-xl">
+              <Card className="mt-4 bg-secondary max-w-xl dark:border-foreground">
                 <CardContent>
                   <p>{t("perex")}</p>
                 </CardContent>
               </Card>
             </motion.div>
-
             <Link className="pt-4" href={"mailto:tran@vietanh.cz"}>
               <EnvelopeClosedIcon className="inline mr-1" />
               tran@vietanh.cz

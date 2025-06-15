@@ -26,8 +26,8 @@ export function PortraitAndWavingHand() {
       rotate: [0, 14, -8, 14, -4, 10, 0, 0],
       translateX: [0, -20, -20, -20, -20, -20, -20, -20],
       transition: {
-        duration: 2.5,
-        ease: "easeInOut",
+        duration: 1.7,
+        ease: "easeOut",
         times: [0, 0.15, 0.3, 0.4, 0.5, 0.6, 0.7, 1],
       },
     },
