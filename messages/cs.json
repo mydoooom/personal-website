@@ -3,7 +3,9 @@
     "hello": "Ahoj! Jmenuji se",
     "name": "Viet Anh",
     "surname": "Tran",
-    "web-developer": "Webový vývojář"
+    "web-developer": "Webový vývojář",
+    "perex": "Jsem zkušený front-endový webový vývojář, kterému záleží na psaní čistého a udržitelného kódu podle nejlepších praxí a s využitím nejmodernějších technologií. Jsem empatický, komunikativní a neustále se vzdělávám nejen v oblasti technologií, ale i mimo ni – a to díky poctivosti, trpělivosti a smyslem pro zodpovědnost."
+
   },
   "LocaleSwitcher": {
     "label": "Změnit jazyk",

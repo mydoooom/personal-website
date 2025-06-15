@@ -3,7 +3,8 @@
     "hello": "Hello! My name is",
     "name": "Viet Anh",
     "surname": "Tran",
-    "web-developer": "Web Developer"
+    "web-developer": "Web Developer",
+    "perex": "I'm an experienced front-end web developer who cares about writing clean, maintainable code using the latest tools and best practices. I'm passionate, communicative, and always eager to learn—both in tech and beyond – driven by honesty, empathy, patience, and a strong sense of responsibility."
   },
   "LocaleSwitcher": {
     "label": "Switch language",

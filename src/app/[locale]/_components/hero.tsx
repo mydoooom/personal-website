@@ -1,13 +1,9 @@
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
-import {
-  EnvelopeClosedIcon,
-  GitHubLogoIcon,
-  InstagramLogoIcon,
-  LinkedInLogoIcon,
-} from "@radix-ui/react-icons";
+import { EnvelopeClosedIcon } from "@radix-ui/react-icons";
 import { PortraitAndWavingHand } from "@/app/[locale]/_components/portrait-and-waving-hand";
-import {Card, CardContent} from "@/ui/card";
+import { Card, CardContent } from "@/ui/card";
+import * as motion from "motion/react-client";
 
 export const Hero = () => {
   const locale = useLocale();
@@ -15,7 +11,7 @@ export const Hero = () => {
 
   return (
     <>
-      <div className="min-h-screen flex justify-center sm:justify-normal items-center ">
+      <div className="min-h-screen pt-20 flex justify-center sm:justify-normal items-center ">
         <div className="grid grid-cols-1 md:grid-cols-[1fr_3fr] items-start gap-5 prose prose-slate dark:prose-invert max-w-none">
           <div className="hidden md:block"></div>
           <PortraitAndWavingHand />
@@ -32,28 +28,21 @@ export const Hero = () => {
             <p className="my-0">
               👨🏻‍💻 <em>{t("web-developer")}</em>
             </p>
-            <Card className="mt-4 bg-secondary max-w-xl">
-              <CardContent>
-                <p>I am an experienced web developer focusing on the front-end. I aim for good quality, maintainable code with the latest industry standard front-end technologies.</p>
-              </CardContent>
-            </Card>
-            <div className="flex gap-3 pt-10">
-              <Link
-                href={"https://www.linkedin.com/in/sebast1antran/"}
-                target={"_blank"}
-              >
-                <LinkedInLogoIcon className="size-9" />
-              </Link>
-              <Link href={"https://github.com/mydoooom"} target={"_blank"}>
-                <GitHubLogoIcon className="size-9" />
-              </Link>
-              <Link
-                href={"https://www.instagram.com/mydoooom/"}
-                target={"_blank"}
-              >
-                <InstagramLogoIcon className="size-9" />
-              </Link>
-            </div>
+            <motion.div
+              initial={{ opacity: 0, translateY: -27 }}
+              animate={{ opacity: 1, translateY: 0 }}
+              transition={{
+                duration: 0.6,
+                ease: [0, 0.71, 0.2, 1.01],
+              }}
+            >
+              <Card className="mt-4 bg-secondary max-w-xl">
+                <CardContent>
+                  <p>{t("perex")}</p>
+                </CardContent>
+              </Card>
+            </motion.div>
+
             <Link className="pt-4" href={"mailto:tran@vietanh.cz"}>
               <EnvelopeClosedIcon className="inline mr-1" />
               tran@vietanh.cz
