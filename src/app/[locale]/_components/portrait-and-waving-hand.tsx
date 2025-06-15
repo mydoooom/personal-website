@@ -54,7 +54,7 @@ export function PortraitAndWavingHand() {
       </motion.div>
       <motion.div
         variants={waveVariants}
-        className="absolute md:-right-12 -right-8 w-fit select-none text-5xl md:text-7xl pb-5 pr-5 md:pb-10 md:pr-10 justify-self-center md:justify-self-end self-center -scale-x-100"
+        className="absolute md:-right-12 -right-8 w-fit select-none text-5xl md:text-7xl pb-5 pr-5 translate-y-5 md:pb-10 md:pr-10 justify-self-center md:justify-self-end self-center -scale-x-100"
       >
         👋
       </motion.div>
