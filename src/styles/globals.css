@@ -73,6 +73,7 @@ body {
   --foreground: oklch(0% 0 0);
   --main-foreground: oklch(0% 0 0);
   --main: oklch(86.03% 0.176 92.36);
+  --secondary: oklch(88% 0.17 160);
   --border: oklch(0% 0 0);
   --ring: oklch(0% 0 0);
   --overlay: oklch(0% 0 0 / 0.8);
@@ -91,6 +92,7 @@ body {
   --foreground: oklch(92.49% 0 0);
   --main-foreground: oklch(0% 0 0);
   --main: oklch(79.36% 0.1624 92.49);
+  --secondary: oklch(56% 0.15 160);
   --border: oklch(0% 0 0);
   --ring: oklch(100% 0 0);
   --shadow: 2px 4px 0px 0px var(--border);
@@ -104,6 +106,7 @@ body {
 
 @theme inline {
   --color-main: var(--main);
+  --color-secondary: var(--secondary);
   --color-background: var(--background);
   --color-secondary-background: var(--secondary-background);
   --color-foreground: var(--foreground);

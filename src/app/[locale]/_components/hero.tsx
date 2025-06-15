@@ -7,6 +7,7 @@ import {
   LinkedInLogoIcon,
 } from "@radix-ui/react-icons";
 import { PortraitAndWavingHand } from "@/app/[locale]/_components/portrait-and-waving-hand";
+import {Card, CardContent} from "@/ui/card";
 
 export const Hero = () => {
   const locale = useLocale();
@@ -14,7 +15,7 @@ export const Hero = () => {
 
   return (
     <>
-      <div className="h-screen flex justify-center sm:justify-normal items-center ">
+      <div className="min-h-screen flex justify-center sm:justify-normal items-center ">
         <div className="grid grid-cols-1 md:grid-cols-[1fr_3fr] items-start gap-5 prose prose-slate dark:prose-invert max-w-none">
           <div className="hidden md:block"></div>
           <PortraitAndWavingHand />
@@ -31,6 +32,11 @@ export const Hero = () => {
             <p className="my-0">
               👨🏻‍💻 <em>{t("web-developer")}</em>
             </p>
+            <Card className="mt-4 bg-secondary max-w-xl">
+              <CardContent>
+                <p>I am an experienced web developer focusing on the front-end. I aim for good quality, maintainable code with the latest industry standard front-end technologies.</p>
+              </CardContent>
+            </Card>
             <div className="flex gap-3 pt-10">
               <Link
                 href={"https://www.linkedin.com/in/sebast1antran/"}
