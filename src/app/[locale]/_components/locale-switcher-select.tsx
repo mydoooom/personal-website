@@ -31,7 +31,7 @@ export default function LocaleSwitcherSelect({
 
   return (
     <Select defaultValue={defaultValue} onValueChange={onSelectChange}>
-      <SelectTrigger className="w-36">
+      <SelectTrigger className="w-32">
         <SelectValue placeholder={label} />
       </SelectTrigger>
       <SelectContent>
