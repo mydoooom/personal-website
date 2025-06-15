@@ -1,0 +1,38 @@
+.speechBubble {
+  position: relative;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--border);
+  border-radius: calc(var(--radius-base) + 7px);
+  background-color: var(--main);
+  font-size: 16px;
+  color: var(--main-foreground);
+  box-shadow: var(--shadow);
+}
+
+.speechBubble::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 31%;
+  border-style: solid;
+  border-width: 15px 18px 0 0;
+  text-shadow: var(--shadow);
+  border-color: var(--color-border) transparent transparent;
+  translate: -57% 123%;
+  transform: skew(-18deg);
+  transform-origin: top;
+}
+
+.speechBubble::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 31%;
+  border-style: solid;
+  border-width: 11px 13px 0 0;
+  border-color: var(--main) transparent transparent;
+  translate: calc(-50% - 1px) 100%;
+  transform: skew(-18deg);
+  transform-origin: top;
+}

@@ -1,10 +1,13 @@
 "use client";
 
+import { SpeechBubble } from "@/app/[locale]/_components/speech-buble/speech-bubble";
 import * as motion from "motion/react-client";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useBreakpoint } from "@/app/_components/hooks/useBreakpoint";
 
 export function PortraitAndWavingHand() {
+  const t = useTranslations("Index");
   const isLargerThanMd = useBreakpoint("md");
 
   const portraitVariants = {
@@ -14,6 +17,18 @@ export function PortraitAndWavingHand() {
     move: {
       translateX: -30,
       transition: { duration: 0.3 },
+    },
+  };
+
+  const speechBubbleVariants = {
+    rest: {
+      translateX: 0,
+      opacity: 0,
+    },
+    move: {
+      translateX: 30,
+      opacity: 1,
+      transition: { duration: 0.4 },
     },
   };
 
@@ -53,8 +68,14 @@ export function PortraitAndWavingHand() {
         />
       </motion.div>
       <motion.div
+        variants={speechBubbleVariants}
+        className="absolute top-10 left-25 md:left-30 z-10"
+      >
+        <SpeechBubble text={t("hello")} />
+      </motion.div>
+      <motion.div
         variants={waveVariants}
-        className="absolute md:-right-12 -right-8 w-fit select-none text-5xl md:text-7xl pb-5 pr-5 translate-y-5 md:pb-10 md:pr-10 justify-self-center md:justify-self-end self-center -scale-x-100"
+        className="absolute bottom-4 md:-right-8 -right-4 w-fit select-none text-5xl md:text-7xl pb-5 pr-5 translate-y-5 md:pb-10 md:pr-10 justify-self-center md:justify-self-end self-center -scale-x-100"
       >
         👋
       </motion.div>

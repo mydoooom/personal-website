@@ -15,7 +15,7 @@ export const Hero = () => {
         <div className="grid grid-cols-1 md:grid-cols-[1fr_3fr] items-start gap-5 prose prose-slate dark:prose-invert max-w-none">
           <div className="hidden md:block"></div>
           <PortraitAndWavingHand />
-          <strong className="md:text-right">{t("hello")}</strong>
+          <strong className="md:text-right">{t("my-name-is")}</strong>
           <div className="flex flex-col">
             <div className="relative flex mb-3 gap-3 flex-col-reverse md:flex-row md: md:gap-8 justify-normal md:items-center">
               <h1 className="m-0 text-5xl font-extrabold md:text-7xl animate-slide-in-left">

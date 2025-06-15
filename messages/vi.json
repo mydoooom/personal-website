@@ -1,6 +1,7 @@
 {
   "Index": {
-    "hello": "Xin chào! Tôi là",
+    "hello": "Xin chào!",
+    "my-name-is": "Tôi là",
     "name": "Việt Anh",
     "surname": "Trần",
     "web-developer": "Nhà phát triển web",

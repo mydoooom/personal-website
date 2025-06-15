@@ -1,6 +1,7 @@
 {
   "Index": {
-    "hello": "哈嘍！我叫",
+    "hello": "哈嘍",
+    "my-name-is": "我叫",
     "name": "越英",
     "surname": "陳",
     "web-developer": "網絡程式設計師",

@@ -1,10 +1,11 @@
 {
   "Index": {
-    "hello": "Ahoj! Jmenuji se",
+    "hello": "Ahoj!",
+    "my-name-is": "Jmenuji se",
     "name": "Viet Anh",
     "surname": "Tran",
     "web-developer": "Webový vývojář",
-    "perex": "Jsem zkušený front-endový webový vývojář, kterému záleží na psaní čistého a udržitelného kódu podle nejlepších praxí a s využitím nejmodernějších technologií. Jsem empatický, komunikativní a neustále se vzdělávám nejen v oblasti technologií, ale i mimo ni – a to díky poctivosti, trpělivosti a smyslem pro zodpovědnost."
+    "perex": "Jsem zkušený front-endový vývojář, kterému záleží na psaní čistého a\u00A0udržitelného kódu podle nejlepších praxí a\u00A0s\u00A0využitím nejmodernějších technologií. Jsem empatický, komunikativní a\u00A0neustále se vzdělávám nejen v oblasti technologií, ale i mimo ni – a to díky poctivosti, trpělivosti a smyslu pro zodpovědnost."
 
   },
   "LocaleSwitcher": {
