@@ -45,7 +45,7 @@ export function PortraitAndWavingHand() {
         variants={portraitVariants}
       >
         <Image
-          className="m-0 w-52 md:w-60 mb-4 bg-slate-700 aspect-square justify-self-center md:justify-self-start rounded-full shadow-2xl touch-callout-none select-none"
+          className="m-0 w-52 md:w-60 mb-4 aspect-square justify-self-center md:justify-self-start rounded-full bg-main border-4 border-border touch-callout-none select-none"
           src="/portrait.jpeg"
           alt="portrait"
           width={400}
