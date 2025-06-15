@@ -1,6 +1,7 @@
 import { type Config } from 'prettier';
 
 const config: Config = {
+    plugins: ["prettier-plugin-tailwindcss"],
     singleQuote: true,
     bracketSpacing: true,
     semi: true,
