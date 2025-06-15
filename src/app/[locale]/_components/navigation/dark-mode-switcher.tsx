@@ -63,13 +63,13 @@ export default function DarkModeSwitcher() {
                 <SunIcon />
                 {t("light")}
               </span>
+            </SelectItem>
               <SelectItem value="dark">
                 <span className="flex items-center gap-2">
                   <MoonIcon />
                   {t("dark")}
                 </span>
               </SelectItem>
-            </SelectItem>
           </SelectContent>
         </Select>
       </div>
