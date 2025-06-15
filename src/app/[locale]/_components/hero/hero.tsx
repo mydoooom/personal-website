@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 import { EnvelopeClosedIcon } from "@radix-ui/react-icons";
-import { PortraitAndWavingHand } from "@/app/[locale]/_components/portrait-and-waving-hand";
+import { PortraitAndWavingHand } from "@/app/[locale]/_components/hero/portrait-and-waving-hand";
 import { Card, CardContent } from "@/ui/card";
 import * as motion from "motion/react-client";
 
@@ -11,7 +11,7 @@ export const Hero = () => {
 
   return (
     <>
-      <div className="min-h-screen pt-24 md:pt-18 flex justify-center sm:justify-normal items-center ">
+      <div className="min-h-screen mb-4 pt-24 md:pt-18 flex justify-center sm:justify-normal items-center">
         <div className="grid grid-cols-1 md:grid-cols-[1fr_3fr] items-start gap-5 prose prose-slate dark:prose-invert max-w-none">
           <div className="hidden md:block"></div>
           <PortraitAndWavingHand />

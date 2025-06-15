@@ -1,3 +1,4 @@
+import { Footer } from "./_components/footer";
 import { Navigation } from "./_components/navigation";
 import { Providers } from "../_components/providers";
 import { hasLocale } from "next-intl";
@@ -8,7 +9,7 @@ import { Space_Grotesk } from "next/font/google";
 import "@/styles/globals.css";
 import { routing } from "@/i18n/routing";
 
-const spaceGrotesk = Space_Grotesk({ subsets: ["latin", "vietnamese"] });
+const spaceGrotesk = Space_Grotesk({ subsets: ["vietnamese"] });
 
 export const metadata: Metadata = {
   title: "Tran Viet Anh",
@@ -35,6 +36,7 @@ export default async function RootLayout({
         <Providers>
           <Navigation />
           {children}
+          <Footer />
         </Providers>
       </body>
     </html>

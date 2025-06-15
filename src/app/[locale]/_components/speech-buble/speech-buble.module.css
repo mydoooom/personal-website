@@ -1,5 +1,7 @@
 .speechBubble {
   position: relative;
+  font-weight: bold;
+  text-wrap: nowrap;
   margin-bottom: 1rem;
   padding: 0.5rem 1rem;
   border: 2px solid var(--border);
