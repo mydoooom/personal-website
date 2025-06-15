@@ -8,7 +8,7 @@
   },
   "LocaleSwitcher": {
     "label": "Thay đổi ngôn ngữ",
-    "locale": "{locale, select, en {🇬🇧 English} cs {🇨🇿 Čeština} vi {🇻🇳 Tiếng Việt} zh {🇹🇼 華語} other {Unknown}}"
+    "locale": "{locale, select, en {English} cs {Čeština} vi {Tiếng Việt} zh {華語} other {Unknown}}"
   },
   "ThemeSwitcher": {
     "change-theme": "Thay đổi giao diện",

@@ -8,7 +8,7 @@
   },
   "LocaleSwitcher": {
     "label": "改變語言",
-    "locale": "{locale, select, en {🇬🇧 English} cs {🇨🇿 Čeština}  vi {🇻🇳 Tiếng Việt} zh {🇹🇼 華語} other {Unknown}}"
+    "locale": "{locale, select, en {English} cs {Čeština}  vi {Tiếng Việt} zh {華語} other {Unknown}}"
   },
   "ThemeSwitcher": {
     "change-theme": "切換主題",

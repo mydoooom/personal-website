@@ -16,21 +16,21 @@ export function Navigation() {
           href={"https://www.linkedin.com/in/sebast1antran/"}
           target={"_blank"}
         >
-          <LinkedInLogoIcon className="size-8" />
+          <LinkedInLogoIcon className="size-6" />
         </Link>
         <Link
           className="flex items-center hover:-translate-y-1 hover:-rotate-2 transform transition-all duration-200"
           href={"https://github.com/mydoooom"}
           target={"_blank"}
         >
-          <GitHubLogoIcon className="size-8" />
+          <GitHubLogoIcon className="size-6" />
         </Link>
         <Link
           className="flex items-center hover:-translate-y-1 hover:-rotate-2 transform transition-all duration-200"
           href={"https://www.instagram.com/mydoooom/"}
           target={"_blank"}
         >
-          <InstagramLogoIcon className="size-8" />
+          <InstagramLogoIcon className="size-6" />
         </Link>
       </div>
       <LocaleSwitcher />
