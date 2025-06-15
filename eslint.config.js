@@ -26,7 +26,6 @@ export default defineConfig([
   pluginReact.configs.flat.recommended,
   pluginReact.configs.flat['jsx-runtime'],
   reactHooks.configs['recommended-latest'],
-  eslintConfigPrettier,
   {
     name: "Next Plugin",
     plugins: {
@@ -37,4 +36,5 @@ export default defineConfig([
       ...pluginNext.configs["core-web-vitals"].rules,
     },
   },
+  eslintConfigPrettier,
 ]);
