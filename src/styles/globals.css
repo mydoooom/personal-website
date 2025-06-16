@@ -92,7 +92,7 @@ body {
   --foreground: oklch(92.49% 0 0);
   --main-foreground: oklch(0% 0 0);
   --main: oklch(79.36% 0.1624 92.49);
-  --secondary: oklch(56% 0.15 160);
+  --secondary: oklch(36% 0.17 179);
   --border: oklch(0% 0 0);
   --ring: oklch(100% 0 0);
   --shadow: 2px 4px 0px 0px var(--border);
