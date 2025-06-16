@@ -6,10 +6,12 @@ import { notFound } from "next/navigation";
 import { ReactNode } from "react";
 import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
+import localFont from "next/font/local"
 import "@/styles/globals.css";
 import { routing } from "@/i18n/routing";
 
-const spaceGrotesk = Space_Grotesk({ subsets: ["vietnamese"] });
+const spaceGrotesk = Space_Grotesk({subsets: ["vietnamese"], variable: "--font-space-grotesk"});
+const huninn = localFont({src: "../fonts/jf-openhuninn.woff2", variable: "--font-huninn"});
 
 export const metadata: Metadata = {
   title: "Tran Viet Anh",
@@ -31,7 +33,7 @@ export default async function RootLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <body
-        className={`${spaceGrotesk.className} bg-bg dark:bg-secondary-background bg-[linear-gradient(to_right,#80808033_1px,transparent_1px),linear-gradient(to_bottom,#80808033_1px,transparent_1px)] bg-[size:69px_69px]`}
+          className={`${spaceGrotesk.variable} ${huninn.variable} font-combined bg-bg dark:bg-secondary-background bg-[linear-gradient(to_right,#80808033_1px,transparent_1px),linear-gradient(to_bottom,#80808033_1px,transparent_1px)] bg-[size:69px_69px]`}
       >
         <Providers>
           <Navigation />

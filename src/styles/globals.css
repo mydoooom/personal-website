@@ -12,11 +12,13 @@
       height: 0;
     }
     to {
+      /*noinspection CssUnresolvedCustomProperty*/
       height: var(--radix-accordion-content-height);
     }
   }
   @keyframes accordion-up {
     from {
+      /*noinspection CssUnresolvedCustomProperty*/
       height: var(--radix-accordion-content-height);
     }
     to {
@@ -141,8 +143,15 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+
+  .font-combined {
+    /*noinspection CssUnresolvedCustomProperty*/
+    font-family: var(--font-space-grotesk), var(--font-huninn), sans-serif;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
 }
 
-button {
-  cursor: pointer;
-}
