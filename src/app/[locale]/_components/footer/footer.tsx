@@ -1,6 +1,8 @@
+import { cn } from "@/ui/lib/utils";
 import { useLocale, useTranslations } from "next-intl";
+import { ComponentProps } from "react";
 
-export function Footer() {
+export function Footer({ className, ...props }: ComponentProps<"footer">) {
   const t = useTranslations("Index");
   const locale = useLocale();
 
@@ -14,7 +16,13 @@ export function Footer() {
 
   return (
     <>
-      <footer className="container py-8 flex flex-col items-center justify-center *:text-center">
+      <footer
+        className={cn(
+          "container my-8 flex flex-col justify-center *:text-center",
+          className,
+        )}
+        {...props}
+      >
         <p>{`© ${currentYearFormatted} ${t("surname")} ${t("name")}`}</p>
         <p>{t("all-rights-reserved")}</p>
       </footer>

@@ -11,7 +11,7 @@ export const Hero = () => {
 
   return (
     <>
-      <div className="min-h-screen mb-4 pt-24 md:pt-18 flex justify-center sm:justify-normal items-center">
+      <div className="mb-4 pt-[17vh] flex justify-center sm:justify-normal items-center">
         <div className="grid grid-cols-1 md:grid-cols-[1fr_3fr] items-start gap-5 prose prose-slate dark:prose-invert max-w-none">
           <div className="hidden md:block"></div>
           <PortraitAndWavingHand />
