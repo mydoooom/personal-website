@@ -5,6 +5,16 @@ const nextConfig: NextConfig = {
   experimental: {
     reactCompiler: true,
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'cataas.com',
+        port: '',
+        pathname: '/**',
+      },
+    ]
+  }
 };
 
 const withNextIntl = createNextIntlPlugin();

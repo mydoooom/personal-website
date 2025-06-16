@@ -6,7 +6,10 @@
     "surname": "陳",
     "web-developer": "網絡程式設計師",
     "perex": "\n我是一位經驗豐富的前端工程師，著重於使用最新工具及編寫乾淨、易維護的程式碼。我充滿熱情、善於溝通，並且渴望學習更多技術與其他領域的知識。誠實、同理心、耐心與責任感，是我工作中最重要的核心價值。",
-    "all-rights-reserved": "保留所有權利。"
+    "all-rights-reserved": "保留所有權利。",
+    "next-cat-gif" : "下一隻貓 GIF",
+    "chuck-norris-joke": "查克·羅禮士 笑話 ",
+    "dad-joke": "老爸笑話"
   },
   "LocaleSwitcher": {
     "label": "改變語言",
