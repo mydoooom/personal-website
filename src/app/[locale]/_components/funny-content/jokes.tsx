@@ -5,14 +5,14 @@ import { useDadJokeQuery } from "@/app/api/hooks/useDadJokeQuery";
 import { Button } from "@/ui/button";
 import { Card, CardContent, CardHeader } from "@/ui/card";
 import { Skeleton } from "@/ui/skeleton";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useState } from "react";
 
 export function Jokes() {
   const {
     data: chuckNorrisJoke,
     refetch: refetchChuckNorrisJoke,
-    isFetching: isChuckNorrisJokeLoading,
+    isLoading: isChuckNorrisJokeLoading,
     isError: isChuckNorrisJokeError,
   } = useChuckNorrisJokeQuery();
   const {
@@ -22,6 +22,7 @@ export function Jokes() {
     isError: isDadJokeError,
   } = useDadJokeQuery();
   const t = useTranslations("Index");
+  const locale = useLocale();
   const [currentJoke, setCurrentJoke] = useState<string | null>(null);
 
   const handleChuckNorrisJoke = async () => {
@@ -44,23 +45,29 @@ export function Jokes() {
             </Button>
             <Button onClick={handleDadJoke}>{t("dad-joke")}</Button>
           </div>
+          {currentJoke !== null ||
+            (locale !== "en" && (
+              <p className="text-center text-xs mt-3">{t("english-only")}</p>
+            ))}
         </CardHeader>
-        <CardContent>
-          <div className="flex justify-between align-bottom gap-4">
-            <span className="text-7xl">“</span>
-            {isChuckNorrisJokeLoading || isDadJokeLoading ? (
-              <div className="flex flex-col gap-2 w-full">
-                <Skeleton className="h-4 w-full" />
-                <Skeleton className="h-4 w-4/5" />
-              </div>
-            ) : isChuckNorrisJokeError || isDadJokeError ? (
-              <p>Error</p>
-            ) : (
-              currentJoke && <span>{currentJoke}</span>
-            )}
-            <span className="text-7xl">”</span>
-          </div>
-        </CardContent>
+        {currentJoke && (
+          <CardContent>
+            <div className="flex justify-between align-bottom gap-4">
+              <span className="text-7xl">“</span>
+              {isChuckNorrisJokeLoading || isDadJokeLoading ? (
+                <div className="flex flex-col gap-2 w-full">
+                  <Skeleton className="h-4 w-full" />
+                  <Skeleton className="h-4 w-4/5" />
+                </div>
+              ) : isChuckNorrisJokeError || isDadJokeError ? (
+                <p>Error</p>
+              ) : (
+                <span>{currentJoke}</span>
+              )}
+              <span className="text-7xl">”</span>
+            </div>
+          </CardContent>
+        )}
       </Card>
     </>
   );

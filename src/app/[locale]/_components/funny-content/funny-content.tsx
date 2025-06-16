@@ -1,5 +1,5 @@
-import { Cats } from "@/app/[locale]/_components/jokes/cats";
-import { Jokes } from "@/app/[locale]/_components/jokes/jokes";
+import { Cats } from "./cats";
+import { Jokes } from "./jokes";
 
 export function FunnyContent() {
   return (

@@ -9,7 +9,8 @@
     "all-rights-reserved": "Všechna práva vyhrazena.",
     "next-cat-gif" : "Další kočičí GIF",
     "chuck-norris-joke": "Vtip s Chuckem Norrisem",
-    "dad-joke": "Tátovský vtip"
+    "dad-joke": "Tátovský vtip",
+    "english-only": "Pouze v angličtině :("
   },
   "LocaleSwitcher": {
     "label": "Změnit jazyk",
